@@ -23,7 +23,7 @@ body{
    
 }
 
-.black-bg{
+#about-sec{
     background:var(--black);
     color:var(--white);
     
@@ -177,7 +177,7 @@ nav li:active:not(#logo){
 
 /*>>>>>ส่วนแสดงผลงาน*/
 /*กดปุ่มเลือก*/
-#portfolio-section{
+#portfolio-sec{
     flex-direction:column;
     justify-content:center;
     align-items:center;
