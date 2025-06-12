@@ -16,7 +16,7 @@ body{
 }
 
 .section{
-    display:flex;
+   
     position:relative;
     height:100vh;
     overflow: hidden;
@@ -73,19 +73,32 @@ nav li:active:not(#logo){
 
 /*ส่วนหน้าแรก*/
 
+#home-sec{
+    display:flex;
+    flex-basis:0;
+}
+
+.picture{
+    flex:2;
+    position:relative;
+    overflow:hidden;
+}
+
+.picture img{
+    position:absolute;
+}
+
 .introducing{
-    margin-left:50px;
+    flex:1;
     color:var(--black);
-    flex-grow:1;
-    flex-basis:0%;
     display:flex;
     justify-content:center;
     flex-direction:column;
-    padding:0px 20px;
+    
     
     h1,h2{
         margin:0px;
-         
+        
     }
 
 
@@ -95,27 +108,34 @@ nav li:active:not(#logo){
 
 }
 
+.introducing .intro-word{
+    margin-top:10rem;
+    margin-left:3rem;
+}
+
 #goto-btn{
     margin-top:20px;
     
     
 }
 #goto-btn button{
-        background:var(--aqua);
-        padding:10px 50px;
-        border-style:none;
-        border-radius:15px;
-        font-size:15px;
-        color:var(--white);
-        transition:500ms;
-    }
+    background:var(--aqua);
+    padding:10px 50px;
+    border-style:none;
+    border-radius:15px;
+    font-size:15px;
+    color:var(--white);
+    transition:500ms;
+}
     
 #goto-btn button:hover{
-        background:var(--darkaque);
-        transform-origin:0;
-        transform:scale(1.2);
+    background:var(--darkaque);
+    transform-origin:0;
+    transform:scale(1.2);
         
 }
+
+
 
 /*ส่วน รายละเอียด*/
 
