@@ -95,7 +95,9 @@ nav li:active:not(#logo){
     
     h1,h2{
         margin:0px;
-        
+        overflow:hidden;
+        white-space:nowrap;
+        animation:word-appear 500ms ease-in;
     }
 
     h1{
@@ -125,6 +127,7 @@ nav li:active:not(#logo){
     color:var(--white);
     transition:500ms;
     position:relative;
+
 }
 
     
@@ -138,6 +141,15 @@ nav li:active:not(#logo){
     animation:bt-active 1s ease;
     transition:50ms;
     background:var(--black);
+}
+
+@keyframes word-appear{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
 }
 
 @keyframes bt-active{
