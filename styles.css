@@ -203,6 +203,20 @@ nav li:active:not(#logo){
 
 /*ส่วน รายละเอียด*/
 
+#about-sec{
+    display:flex;
+    flex-basis:0;
+}
+
+.profile-pic{
+    
+    /* รูปใหญ่เกิน */
+    img{
+        transform:scale(0.5);
+        border-radius:360px;
+    }
+}
+
 .detail{
     display:flex;
     margin-top:20vh;
@@ -234,19 +248,11 @@ nav li:active:not(#logo){
     margin:0;
 }
 
-.profile-pic{
-    display:flex;
 
-    img{
-        transform:scale(0.5);
-        border-radius:360px;
-    }
-}
 
 /*>>>>>ส่วนแสดงผลงาน*/
 
 #portfolio-sec{
-    
 
 }
 
